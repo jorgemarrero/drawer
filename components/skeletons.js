@@ -1,0 +1,88 @@
+import _extends from "@babel/runtime/helpers/extends";
+import _objectSpread from "@babel/runtime/helpers/objectSpread";
+import _css from "@emotion/css";
+import _objectWithoutProperties from "@babel/runtime/helpers/objectWithoutProperties";
+import { jsx as ___EmotionJSX } from "@emotion/core";
+import React from 'react';
+import { Skeleton as SkeletonAvatar } from '@atlaskit/avatar';
+import { gridSize as gridSizeFn } from '@atlaskit/theme';
+var gridSize = gridSizeFn();
+/* Primitives */
+
+var Wrapper = function Wrapper(_ref) {
+  var isAvatarHidden = _ref.isAvatarHidden,
+      isHeader = _ref.isHeader,
+      props = _objectWithoutProperties(_ref, ["isAvatarHidden", "isHeader"]);
+
+  return ___EmotionJSX("div", _extends({
+    css:
+    /*#__PURE__*/
+    _css(_objectSpread({
+      display: 'flex',
+      alignItems: 'center',
+      margin: isAvatarHidden ? "".concat(gridSize * 2, "px") : "".concat(gridSize / 2, "px ").concat(gridSize, "px ").concat(gridSize, "px ").concat(gridSize * 2, "px")
+    }, isHeader && !isAvatarHidden ? {
+      marginLeft: "".concat(gridSize, "px")
+    } : {}), process.env.NODE_ENV === "production" ? "" : "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3NyYy9jb21wb25lbnRzL3NrZWxldG9ucy5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUE2QkkiLCJmaWxlIjoiLi4vc3JjL2NvbXBvbmVudHMvc2tlbGV0b25zLmpzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gQGZsb3dcbmltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XG5pbXBvcnQgeyBTa2VsZXRvbiBhcyBTa2VsZXRvbkF2YXRhciB9IGZyb20gJ0BhdGxhc2tpdC9hdmF0YXInO1xuaW1wb3J0IHsgZ3JpZFNpemUgYXMgZ3JpZFNpemVGbiB9IGZyb20gJ0BhdGxhc2tpdC90aGVtZSc7XG5cbnR5cGUgV3JhcHBlclByb3BzID0ge1xuICBpc0F2YXRhckhpZGRlbj86IGJvb2xlYW4sXG4gIGlzSGVhZGVyPzogYm9vbGVhbixcbn07XG50eXBlIERyYXdlclNrZWxldG9uSXRlbVByb3BzID0ge1xuICBpc0NvbGxhcHNlZD86IGJvb2xlYW4sXG4gIGl0ZW1UZXh0V2lkdGg/OiBzdHJpbmcsXG4gIGlzQXZhdGFySGlkZGVuPzogYm9vbGVhbixcbn07XG50eXBlIERyYXdlclNrZWxldG9uSGVhZGVyUHJvcHMgPSB7XG4gIGlzQ29sbGFwc2VkPzogYm9vbGVhbixcbiAgaXNBdmF0YXJIaWRkZW4/OiBib29sZWFuLFxufTtcbnR5cGUgU2tlbGV0b25UZXh0UHJvcHMgPSB7XG4gIGlzSGVhZGVyPzogYm9vbGVhbixcbiAgaXRlbVRleHRXaWR0aD86IHN0cmluZyxcbiAgaXNBdmF0YXJIaWRkZW4/OiBib29sZWFuLFxufTtcblxuY29uc3QgZ3JpZFNpemUgPSBncmlkU2l6ZUZuKCk7XG5cbi8qIFByaW1pdGl2ZXMgKi9cbmNvbnN0IFdyYXBwZXIgPSAoeyBpc0F2YXRhckhpZGRlbiwgaXNIZWFkZXIsIC4uLnByb3BzIH06IFdyYXBwZXJQcm9wcykgPT4gKFxuICA8ZGl2XG4gICAgY3NzPXt7XG4gICAgICBkaXNwbGF5OiAnZmxleCcsXG4gICAgICBhbGlnbkl0ZW1zOiAnY2VudGVyJyxcbiAgICAgIG1hcmdpbjogaXNBdmF0YXJIaWRkZW5cbiAgICAgICAgPyBgJHtncmlkU2l6ZSAqIDJ9cHhgXG4gICAgICAgIDogYCR7Z3JpZFNpemUgLyAyfXB4ICR7Z3JpZFNpemV9cHggJHtncmlkU2l6ZX1weCAke2dyaWRTaXplICogMn1weGAsXG4gICAgICAuLi4oaXNIZWFkZXIgJiYgIWlzQXZhdGFySGlkZGVuID8geyBtYXJnaW5MZWZ0OiBgJHtncmlkU2l6ZX1weGAgfSA6IHt9KSxcbiAgICB9fVxuICAgIHsuLi5wcm9wc31cbiAgLz5cbik7XG5cbmNvbnN0IGhlYWRlclN0eWxlc092ZXJyaWRlID0gaXNBdmF0YXJIaWRkZW4gPT4gKHtcbiAgLi4uKCFpc0F2YXRhckhpZGRlbiA/IHsgbWFyZ2luTGVmdDogYCR7Z3JpZFNpemUgKiAyfXB4YCB9IDogbnVsbCksXG4gIHdpZHRoOiBgJHtncmlkU2l6ZSAqIDE4fXB4YCxcbiAgb3BhY2l0eTogMC4zLFxufSk7XG5cbmNvbnN0IFNrZWxldG9uVGV4dCA9ICh7XG4gIGlzQXZhdGFySGlkZGVuLFxuICBpc0hlYWRlcixcbiAgaXRlbVRleHRXaWR0aCxcbn06IFNrZWxldG9uVGV4dFByb3BzKSA9PiAoXG4gIDxkaXZcbiAgICBjc3M9e3tcbiAgICAgIGhlaWdodDogYCR7Z3JpZFNpemUgKiAyLjV9cHhgLFxuICAgICAgYmFja2dyb3VuZENvbG9yOiAnY3VycmVudENvbG9yJyxcbiAgICAgIGJvcmRlclJhZGl1czogZ3JpZFNpemUgLyAyLFxuICAgICAgb3BhY2l0eTogMC4xNSxcbiAgICAgIHdpZHRoOiBpdGVtVGV4dFdpZHRoIHx8IGAke2dyaWRTaXplICogMTd9cHhgLFxuICAgICAgLi4uKCFpc0F2YXRhckhpZGRlbiA/IHsgbWFyZ2luTGVmdDogYCR7Z3JpZFNpemUgKiAzfXB4YCB9IDogbnVsbCksXG4gICAgICAuLi4oaXNIZWFkZXIgPyBoZWFkZXJTdHlsZXNPdmVycmlkZShpc0F2YXRhckhpZGRlbikgOiBudWxsKSxcbiAgICB9fVxuICAvPlxuKTtcblxuLyogRXhwb3J0ZWQgQ29tcG9uZW50cyAqL1xuZXhwb3J0IGNvbnN0IERyYXdlclNrZWxldG9uSGVhZGVyID0gKHByb3BzOiBEcmF3ZXJTa2VsZXRvbkhlYWRlclByb3BzKSA9PiB7XG4gIGNvbnN0IHsgaXNBdmF0YXJIaWRkZW4sIGlzQ29sbGFwc2VkIH0gPSBwcm9wcztcbiAgcmV0dXJuIChcbiAgICA8V3JhcHBlciBpc0F2YXRhckhpZGRlbj17aXNBdmF0YXJIaWRkZW59IGlzSGVhZGVyPlxuICAgICAgeyFpc0F2YXRhckhpZGRlbiAmJiAoXG4gICAgICAgIDxTa2VsZXRvbkF2YXRhciBhcHBlYXJhbmNlPVwic3F1YXJlXCIgc2l6ZT1cImxhcmdlXCIgd2VpZ2h0PVwic3Ryb25nXCIgLz5cbiAgICAgICl9XG4gICAgICB7IWlzQ29sbGFwc2VkICYmIChcbiAgICAgICAgPFNrZWxldG9uVGV4dCBpc0hlYWRlciBpc0F2YXRhckhpZGRlbj17aXNBdmF0YXJIaWRkZW59IC8+XG4gICAgICApfVxuICAgIDwvV3JhcHBlcj5cbiAgKTtcbn07XG5cbmV4cG9ydCBjb25zdCBEcmF3ZXJTa2VsZXRvbkl0ZW0gPSAocHJvcHM6IERyYXdlclNrZWxldG9uSXRlbVByb3BzKSA9PiB7XG4gIGNvbnN0IHsgaXNBdmF0YXJIaWRkZW4sIGlzQ29sbGFwc2VkLCBpdGVtVGV4dFdpZHRoIH0gPSBwcm9wcztcblxuICByZXR1cm4gKFxuICAgIDxXcmFwcGVyIGlzQXZhdGFySGlkZGVuPXtpc0F2YXRhckhpZGRlbn0+XG4gICAgICB7IWlzQXZhdGFySGlkZGVuICYmIDxTa2VsZXRvbkF2YXRhciBzaXplPVwic21hbGxcIiB3ZWlnaHQ9XCJub3JtYWxcIiAvPn1cbiAgICAgIHshaXNDb2xsYXBzZWQgJiYgKFxuICAgICAgICA8U2tlbGV0b25UZXh0XG4gICAgICAgICAgaXRlbVRleHRXaWR0aD17aXRlbVRleHRXaWR0aH1cbiAgICAgICAgICBpc0F2YXRhckhpZGRlbj17aXNBdmF0YXJIaWRkZW59XG4gICAgICAgIC8+XG4gICAgICApfVxuICAgIDwvV3JhcHBlcj5cbiAgKTtcbn07XG4iXX0= */")
+  }, props));
+};
+
+var headerStylesOverride = function headerStylesOverride(isAvatarHidden) {
+  return _objectSpread({}, !isAvatarHidden ? {
+    marginLeft: "".concat(gridSize * 2, "px")
+  } : null, {
+    width: "".concat(gridSize * 18, "px"),
+    opacity: 0.3
+  });
+};
+
+var SkeletonText = function SkeletonText(_ref2) {
+  var isAvatarHidden = _ref2.isAvatarHidden,
+      isHeader = _ref2.isHeader,
+      itemTextWidth = _ref2.itemTextWidth;
+  return ___EmotionJSX("div", {
+    css:
+    /*#__PURE__*/
+    _css(_objectSpread({
+      height: "".concat(gridSize * 2.5, "px"),
+      backgroundColor: 'currentColor',
+      borderRadius: gridSize / 2,
+      opacity: 0.15,
+      width: itemTextWidth || "".concat(gridSize * 17, "px")
+    }, !isAvatarHidden ? {
+      marginLeft: "".concat(gridSize * 3, "px")
+    } : null, isHeader ? headerStylesOverride(isAvatarHidden) : null), process.env.NODE_ENV === "production" ? "" : "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3NyYy9jb21wb25lbnRzL3NrZWxldG9ucy5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFxREkiLCJmaWxlIjoiLi4vc3JjL2NvbXBvbmVudHMvc2tlbGV0b25zLmpzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gQGZsb3dcbmltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XG5pbXBvcnQgeyBTa2VsZXRvbiBhcyBTa2VsZXRvbkF2YXRhciB9IGZyb20gJ0BhdGxhc2tpdC9hdmF0YXInO1xuaW1wb3J0IHsgZ3JpZFNpemUgYXMgZ3JpZFNpemVGbiB9IGZyb20gJ0BhdGxhc2tpdC90aGVtZSc7XG5cbnR5cGUgV3JhcHBlclByb3BzID0ge1xuICBpc0F2YXRhckhpZGRlbj86IGJvb2xlYW4sXG4gIGlzSGVhZGVyPzogYm9vbGVhbixcbn07XG50eXBlIERyYXdlclNrZWxldG9uSXRlbVByb3BzID0ge1xuICBpc0NvbGxhcHNlZD86IGJvb2xlYW4sXG4gIGl0ZW1UZXh0V2lkdGg/OiBzdHJpbmcsXG4gIGlzQXZhdGFySGlkZGVuPzogYm9vbGVhbixcbn07XG50eXBlIERyYXdlclNrZWxldG9uSGVhZGVyUHJvcHMgPSB7XG4gIGlzQ29sbGFwc2VkPzogYm9vbGVhbixcbiAgaXNBdmF0YXJIaWRkZW4/OiBib29sZWFuLFxufTtcbnR5cGUgU2tlbGV0b25UZXh0UHJvcHMgPSB7XG4gIGlzSGVhZGVyPzogYm9vbGVhbixcbiAgaXRlbVRleHRXaWR0aD86IHN0cmluZyxcbiAgaXNBdmF0YXJIaWRkZW4/OiBib29sZWFuLFxufTtcblxuY29uc3QgZ3JpZFNpemUgPSBncmlkU2l6ZUZuKCk7XG5cbi8qIFByaW1pdGl2ZXMgKi9cbmNvbnN0IFdyYXBwZXIgPSAoeyBpc0F2YXRhckhpZGRlbiwgaXNIZWFkZXIsIC4uLnByb3BzIH06IFdyYXBwZXJQcm9wcykgPT4gKFxuICA8ZGl2XG4gICAgY3NzPXt7XG4gICAgICBkaXNwbGF5OiAnZmxleCcsXG4gICAgICBhbGlnbkl0ZW1zOiAnY2VudGVyJyxcbiAgICAgIG1hcmdpbjogaXNBdmF0YXJIaWRkZW5cbiAgICAgICAgPyBgJHtncmlkU2l6ZSAqIDJ9cHhgXG4gICAgICAgIDogYCR7Z3JpZFNpemUgLyAyfXB4ICR7Z3JpZFNpemV9cHggJHtncmlkU2l6ZX1weCAke2dyaWRTaXplICogMn1weGAsXG4gICAgICAuLi4oaXNIZWFkZXIgJiYgIWlzQXZhdGFySGlkZGVuID8geyBtYXJnaW5MZWZ0OiBgJHtncmlkU2l6ZX1weGAgfSA6IHt9KSxcbiAgICB9fVxuICAgIHsuLi5wcm9wc31cbiAgLz5cbik7XG5cbmNvbnN0IGhlYWRlclN0eWxlc092ZXJyaWRlID0gaXNBdmF0YXJIaWRkZW4gPT4gKHtcbiAgLi4uKCFpc0F2YXRhckhpZGRlbiA/IHsgbWFyZ2luTGVmdDogYCR7Z3JpZFNpemUgKiAyfXB4YCB9IDogbnVsbCksXG4gIHdpZHRoOiBgJHtncmlkU2l6ZSAqIDE4fXB4YCxcbiAgb3BhY2l0eTogMC4zLFxufSk7XG5cbmNvbnN0IFNrZWxldG9uVGV4dCA9ICh7XG4gIGlzQXZhdGFySGlkZGVuLFxuICBpc0hlYWRlcixcbiAgaXRlbVRleHRXaWR0aCxcbn06IFNrZWxldG9uVGV4dFByb3BzKSA9PiAoXG4gIDxkaXZcbiAgICBjc3M9e3tcbiAgICAgIGhlaWdodDogYCR7Z3JpZFNpemUgKiAyLjV9cHhgLFxuICAgICAgYmFja2dyb3VuZENvbG9yOiAnY3VycmVudENvbG9yJyxcbiAgICAgIGJvcmRlclJhZGl1czogZ3JpZFNpemUgLyAyLFxuICAgICAgb3BhY2l0eTogMC4xNSxcbiAgICAgIHdpZHRoOiBpdGVtVGV4dFdpZHRoIHx8IGAke2dyaWRTaXplICogMTd9cHhgLFxuICAgICAgLi4uKCFpc0F2YXRhckhpZGRlbiA/IHsgbWFyZ2luTGVmdDogYCR7Z3JpZFNpemUgKiAzfXB4YCB9IDogbnVsbCksXG4gICAgICAuLi4oaXNIZWFkZXIgPyBoZWFkZXJTdHlsZXNPdmVycmlkZShpc0F2YXRhckhpZGRlbikgOiBudWxsKSxcbiAgICB9fVxuICAvPlxuKTtcblxuLyogRXhwb3J0ZWQgQ29tcG9uZW50cyAqL1xuZXhwb3J0IGNvbnN0IERyYXdlclNrZWxldG9uSGVhZGVyID0gKHByb3BzOiBEcmF3ZXJTa2VsZXRvbkhlYWRlclByb3BzKSA9PiB7XG4gIGNvbnN0IHsgaXNBdmF0YXJIaWRkZW4sIGlzQ29sbGFwc2VkIH0gPSBwcm9wcztcbiAgcmV0dXJuIChcbiAgICA8V3JhcHBlciBpc0F2YXRhckhpZGRlbj17aXNBdmF0YXJIaWRkZW59IGlzSGVhZGVyPlxuICAgICAgeyFpc0F2YXRhckhpZGRlbiAmJiAoXG4gICAgICAgIDxTa2VsZXRvbkF2YXRhciBhcHBlYXJhbmNlPVwic3F1YXJlXCIgc2l6ZT1cImxhcmdlXCIgd2VpZ2h0PVwic3Ryb25nXCIgLz5cbiAgICAgICl9XG4gICAgICB7IWlzQ29sbGFwc2VkICYmIChcbiAgICAgICAgPFNrZWxldG9uVGV4dCBpc0hlYWRlciBpc0F2YXRhckhpZGRlbj17aXNBdmF0YXJIaWRkZW59IC8+XG4gICAgICApfVxuICAgIDwvV3JhcHBlcj5cbiAgKTtcbn07XG5cbmV4cG9ydCBjb25zdCBEcmF3ZXJTa2VsZXRvbkl0ZW0gPSAocHJvcHM6IERyYXdlclNrZWxldG9uSXRlbVByb3BzKSA9PiB7XG4gIGNvbnN0IHsgaXNBdmF0YXJIaWRkZW4sIGlzQ29sbGFwc2VkLCBpdGVtVGV4dFdpZHRoIH0gPSBwcm9wcztcblxuICByZXR1cm4gKFxuICAgIDxXcmFwcGVyIGlzQXZhdGFySGlkZGVuPXtpc0F2YXRhckhpZGRlbn0+XG4gICAgICB7IWlzQXZhdGFySGlkZGVuICYmIDxTa2VsZXRvbkF2YXRhciBzaXplPVwic21hbGxcIiB3ZWlnaHQ9XCJub3JtYWxcIiAvPn1cbiAgICAgIHshaXNDb2xsYXBzZWQgJiYgKFxuICAgICAgICA8U2tlbGV0b25UZXh0XG4gICAgICAgICAgaXRlbVRleHRXaWR0aD17aXRlbVRleHRXaWR0aH1cbiAgICAgICAgICBpc0F2YXRhckhpZGRlbj17aXNBdmF0YXJIaWRkZW59XG4gICAgICAgIC8+XG4gICAgICApfVxuICAgIDwvV3JhcHBlcj5cbiAgKTtcbn07XG4iXX0= */")
+  });
+};
+/* Exported Components */
+
+
+export var DrawerSkeletonHeader = function DrawerSkeletonHeader(props) {
+  var isAvatarHidden = props.isAvatarHidden,
+      isCollapsed = props.isCollapsed;
+  return ___EmotionJSX(Wrapper, {
+    isAvatarHidden: isAvatarHidden,
+    isHeader: true
+  }, !isAvatarHidden && ___EmotionJSX(SkeletonAvatar, {
+    appearance: "square",
+    size: "large",
+    weight: "strong"
+  }), !isCollapsed && ___EmotionJSX(SkeletonText, {
+    isHeader: true,
+    isAvatarHidden: isAvatarHidden
+  }));
+};
+export var DrawerSkeletonItem = function DrawerSkeletonItem(props) {
+  var isAvatarHidden = props.isAvatarHidden,
+      isCollapsed = props.isCollapsed,
+      itemTextWidth = props.itemTextWidth;
+  return ___EmotionJSX(Wrapper, {
+    isAvatarHidden: isAvatarHidden
+  }, !isAvatarHidden && ___EmotionJSX(SkeletonAvatar, {
+    size: "small",
+    weight: "normal"
+  }), !isCollapsed && ___EmotionJSX(SkeletonText, {
+    itemTextWidth: itemTextWidth,
+    isAvatarHidden: isAvatarHidden
+  }));
+};
