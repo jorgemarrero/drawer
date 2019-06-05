@@ -28,7 +28,6 @@ var Wrapper = function Wrapper(_ref) {
     width = _ref$width === void 0 ? "narrow" : _ref$width,
     shouldUnmountOnExit = _ref.shouldUnmountOnExit,
     props = _objectWithoutProperties(_ref, ["width", "shouldUnmountOnExit"]);
-  console.log("PROPS", props);
   return ___EmotionJSX(
     "div",
     _extends(
