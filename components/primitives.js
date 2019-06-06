@@ -19,7 +19,7 @@ var widths = {
   narrow: 45 * gridSize(),
   medium: 60 * gridSize(),
   wide: 75 * gridSize(),
-  zero: 0
+  custom: "304px"
 }; // Wrapper
 // ------------------------------
 
